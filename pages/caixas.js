@@ -26,7 +26,6 @@ const Caixas = () => {
             console.error(err)
         }
     }
-
     const onChange = evt => {
         const value = evt.target.value
         const key = evt.target.name
