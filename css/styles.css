@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* HEADER */
+
+.header,
+.footer {
+    background-color: #e70606;
+    color: #fff;
+
+}
+
+.btn-caixas {
+    background-color: #b458f5;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.btn-caixas:hover {
+    background-color: #9d3ae4;
+    text-decoration: none;
+    color: #fff;
+}
