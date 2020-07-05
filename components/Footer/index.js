@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='flex-col '>
-            <div className='footer  md:h-20 '>
+            <div className='footer h-24 md:h-20 '>
                 <h6 className='container pt-4 mx-auto text-center'>Projeto desenvolvido com amor para a Lya
-                    <i className='container mx-auto text-center fa fa-heart'></i>
+                    <i className='container mx-auto mt-2 text-center fa fa-heart'></i>
                 </h6>
             </div>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>

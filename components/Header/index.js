@@ -7,7 +7,7 @@ const Header = () => {
             <div className='header p-4 flex-col md:shadow-lg'>
                 <div className=''>
                     <Link href='/'>
-                        <a><img className='md:w-40 mx-auto' src='logo16.png' alt='Net Link' /></a>
+                        <a><img className='h-16 md:w-40 mx-auto' src='logo16.png' alt='Net Link' /></a>
                     </Link>
                 </div>
                 <div className=' container mx-auto md:mt-4'>

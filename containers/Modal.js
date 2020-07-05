@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-
+import { formatMoney } from '../utils'
 const Modal = (props) => {
     const [showResult, setShowResult] = useState(false)
 
     function showResults() {
         setShowResult(true)
     }
+
     return (
         <div className='md:mt-6'>
             {
@@ -30,7 +31,7 @@ const Modal = (props) => {
                     </div>)
             }
             <div className='text-center'>
-                <button type="button" className="btn btn-secondary md:mt-6" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => showResults()}>
+                <button type="button" className="btn btn-secondary sm:mb-4 md:mt-6" data-toggle="modal" data-target="#exampleModalCenter" onClick={() => showResults()}>
                     Conferir Valores
                 </button>
             </div>

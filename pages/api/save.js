@@ -1,5 +1,6 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 import { fromBase64 } from '../../utils/base64'
+import { somatorio } from '../../utils/somatorio'
 import * as moment from 'moment'
 import 'moment/locale/pt-br'
 
@@ -19,9 +20,9 @@ export default async (req, res) => {
             Data: moment().format('LLLL'),
             Nome: data.Nome,
             Loja: data.Loja,
-            'Valor Cópia': data.ValorCopia,
-            'Valor Impressão': data.ValorImpressao,
-            Total: data.Total
+            'Valor Cópia': parseFloat(data.ValorCopia),
+            'Valor Impressão': parseFloat(data.ValorImpressao),
+            Total: somatorio(parseFloat(data.ValorCopia), parseFloat(data.ValorImpressao))
         })
         res.end(req.body)
     } catch (err) {
